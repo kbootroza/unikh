@@ -53,7 +53,9 @@ Source: "{app}\fix8.reg"; DestDir: "{app}"; Flags: ignoreversion; MinVersion: 0.
 Source: "{app}\amd64\Kboot.dll"; DestDir: "{app}\amd64"; Flags: ignoreversion; MinVersion: 0.0,6.0; Check: IsWin64
 Source: "{app}\wow64\Kboot.dll"; DestDir: "{app}\wow64"; Flags: ignoreversion; MinVersion: 0.0,6.0; Check: IsWin64
 Source: "{app}\i386\Kboot.dll"; DestDir: "{app}\i386"; Check: "not IsWin64"; MinVersion: 0.0,6.0; Flags: ignoreversion 
-
+Source: "{app}\cmd.ico"; DestDir: "C:\kdroid"; Flags: ignoreversion; MinVersion: 0.0,6.0;
+Source: "{app}\down.ico"; DestDir: "C:\kdroid"; Flags: ignoreversion; MinVersion: 0.0,6.0;
+Source: "{app}\downtools.exe"; DestDir: "C:\kdroid"; Flags: ignoreversion; MinVersion: 0.0,6.0;
 ;unicode
 
 Source: "{fonts}\LeelaUIb_0.ttf"; DestDir: "{fonts}"; FontInstall: "LeelaUIb.ttf"; MinVersion: 0.0,6.0; Flags: overwritereadonly 
