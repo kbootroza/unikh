@@ -109,7 +109,7 @@ WelcomeLabel2=This will install [name/ver] on your computer.%n%nIt is recommende
 ; *** "Password" wizard page
 WizardPassword=Password
 PasswordLabel1=Get Password Tel: 010961629-011961629-012961629.
-PasswordLabel3=Password : kdroidtools
+PasswordLabel3=Password : waskh
 PasswordEditLabel=&Password:
 IncorrectPassword=The password you entered is not correct. Please try again.
 

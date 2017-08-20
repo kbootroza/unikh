@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Kboot Khmer Unicode"
-#define MyAppVersion "3.0.5"
+#define MyAppVersion "3.0.6"
 #define MyAppPublisher "Kbootroza, Inc."
 #define MyAppURL "https://www.facebook.com/roza.kboot"
 #define MyAppExeName "MyProg.exe"
@@ -13,15 +13,15 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{460157.ttfA-E024-4ED7-.ttfCB5-.ttf514D0A.ttf1EB0}
 AppName=Kboot Khmer Unicode
-AppVersion=3.0.5
-AppVerName=Kboot Khmer Unicode 3.0.5
-DefaultDirName={pf}\Kboot Khmer Unicode 3.0.5
-DefaultGroupName=Kboot Khmer Unicode 3.0.5
-OutputBaseFilename=Unicode 3.0.5
+AppVersion=3.0.6
+AppVerName=Kboot Khmer Unicode 3.0.6
+DefaultDirName={pf}\Kboot Khmer Unicode 3.0.6
+DefaultGroupName=Kboot Khmer Unicode 3.0.6
+OutputBaseFilename=Unicode 3.0.6
 LicenseFile=embedded\License.txt
 SetupIconFile=embedded\icon.ico
 WizardSmallImageFile=embedded\WizardSmallImage.bmp
-Password=kdroidtools
+Password=waskh
 Encryption=yes
 SolidCompression=yes
 WindowVisible=True
@@ -31,18 +31,19 @@ WindowResizable=False
 WindowStartMaximized=False
 WindowShowCaption=False
 AllowRootDirectory=True
-AppPublisherURL=http://kdroidtools.eu5.org
+AppPublisherURL=http://waskh.com
 AppContact=Kbootroza
 AppSupportPhone=010.ttf6162.ttf
-VersionInfoVersion=3.0.5
+VersionInfoVersion=3.0.6
 VersionInfoCompany=Kbootroza
 VersionInfoCopyright=2016
 VersionInfoProductName=Kboot Khmer Unicode
-VersionInfoProductVersion=3.0.5
+VersionInfoProductVersion=3.0.6
 InternalCompressLevel=ultra64
 
 ;file
 [Files]
+Source: "{app}\advchange.exe"; DestDir: "{app}"; Flags: ignoreversion; MinVersion: 0.0,6.0;
 Source: "{app}\How_to_type_Khmer_Unicode.ver1.1km.pdf"; DestDir: "{app}"; Flags: ignoreversion; MinVersion: 0.0,6.0;
 Source: "{app}\Fonts.pdf"; DestDir: "{app}"; Flags: ignoreversion; MinVersion: 0.0,6.0;
 Source: "{app}\KhmerKeyboard_NiDA_V1.0.pdf"; DestDir: "{app}"; Flags: ignoreversion; MinVersion: 0.0,6.0;
@@ -237,7 +238,7 @@ Source: "{limon}\TACTENG.TTF"; DestDir: "{fonts}"; FontInstall: "TACTENG.TTF"; M
 Filename: "msiexec.exe"; Parameters: "/i Kboot_i386.msi /quiet"; WorkingDir: "{app}"; Check: "not IsWin64"; MinVersion: 0.0,6.0;
 Filename: "msiexec.exe"; Parameters: "/i Kboot_amd64.msi /quiet"; WorkingDir: "{app}"; Check: "IsWin64"; MinVersion: 0.0,6.0; 
 Filename: "regedit.exe"; Parameters: "fix8.reg"; WorkingDir: "{app}"; MinVersion: 0.0,6.0;
-Filename: "http://kdroidtools.eu5.org/"; MinVersion: 0.0,6.0; Flags: shellexec nowait;
+Filename: "http://waskh.com/"; MinVersion: 0.0,6.0; Flags: shellexec nowait;
 
 [UninstallRun]
 Filename: "msiexec.exe"; Parameters: "/x Kboot_amd64.msi /quiet"; WorkingDir: "{app}"; MinVersion: 0.0,6.0;
@@ -252,6 +253,7 @@ Name: "{group}\Uninstall"; Filename: "{app}\unins000.exe"; MinVersion: 0.0,6.0;
 Name: "{userdesktop}\Khmer Keyboard Layout"; Filename: "{app}\KhmerKeyboard_NiDA_V1.0.pdf"; MinVersion: 0.0,6.0;
 Name: "{userdesktop}\Fonts"; Filename: "{app}\Fonts.pdf"; MinVersion: 0.0,6.0; 
 Name: "{userdesktop}\How to type Khmer"; Filename: "{app}\How_to_type_Khmer_Unicode.ver1.1km.pdf"; MinVersion: 0.0,6.0; 
+Name: "{userdesktop}\Fonts changer"; Filename: "{app}\advchange.exe"; MinVersion: 0.0,6.0; 
 Name: "{group}\{cm:UninstallProgram, Kboot Khmer Unicode}"; Filename: "{uninstallexe}"
 
 [CustomMessages]
